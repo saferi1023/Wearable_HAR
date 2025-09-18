@@ -38,7 +38,7 @@ This repository implements a **three–stage pipeline** to generate virtual IMU 
 
 ---
 
-### 1️⃣ Environment Setup
+## Environment Setup
 - **Python:** 3.8+
 - **Recommended GPU:** CUDA-enabled NVIDIA GPU
 - Create and activate a conda environment from the provided YAML file:
@@ -47,9 +47,9 @@ conda env create -f environment_new.yml
 conda activate wearable_har
 ```
 
-##Download the pretrained models and dependencies before going ahead
-```
-%%bash
-bash dataset/prepare/download_model.sh
-bash dataset/prepare/download_extractor.sh
+## Download the pretrained models
+
+```bash
+bash prepare/download_model.sh
+bash prepare/download_extractor.sh
 ```
