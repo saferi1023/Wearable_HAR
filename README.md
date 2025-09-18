@@ -1,3 +1,12 @@
+# Text2IMU
+Generate synthetic inertial sensor (IMU) data for Human Activity Recognition (HAR) directly from natural-language activity prompts.
+
+## Table of Contents
+- [Project Workflow](#project-workflow)
+- [How to Run](#how-to-run-the-project)
+- [Environment Setup](#environment-setup)
+- [Download Pretrained Models](#download-the-pretrained-models)
+
 ## Project Workflow
 
 This project generates **virtual IMU data** for Human Activity Recognition (HAR) from natural-language activity prompts.
