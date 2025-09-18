@@ -29,7 +29,25 @@ This project generates **virtual IMU data** for Human Activity Recognition (HAR)
 
 ---
 
-Download the pretrained models and dependencies before going ahead
+## How to Run the Project
+
+This repository implements a **three–stage pipeline** to generate virtual IMU sensor data from natural-language activity prompts.
+1. **Text → 3D Motion** (`B1_text_to_motion.py`)
+2. **3D Motion → Quaternion Representation** (`B2_quat_generation.py`)
+3. **Quaternion → IMU Simulation** (`B3_imu_simulate.py`)
+
+---
+
+### 1️⃣ Environment Setup
+- **Python:** 3.8+
+- **Recommended GPU:** CUDA-enabled NVIDIA GPU
+- Create and activate a conda environment from the provided YAML file:
+```bash
+conda env create -f environment_new.yml
+conda activate wearable_har
+```
+
+##Download the pretrained models and dependencies before going ahead
 ```
 %%bash
 bash dataset/prepare/download_model.sh
